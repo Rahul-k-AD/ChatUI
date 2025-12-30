@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI - Social Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white">
+
+    <!-- Main Container -->
+    <div class="flex h-screen bg-gray-100">
+
+        <!-- Sidebar - Conversations List -->
+        <div class="w-full md:w-80 bg-white border-r border-gray-200 flex flex-col">
+
+            <!-- Header -->
+            <div class="p-4 border-b border-gray-200">
+                <div class="flex items-center justify-between mb-4">
+                    <h1 class="text-2xl font-bold">Messages</h1>
+                    <button class="text-gray-600 hover:text-gray-900">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="relative">
+                    <input type="text" placeholder="Search conversations..."
+                        class="w-full px-4 py-2 bg-gray-100 rounded-full text-sm focus:outline-none">
+                </div>
+            </div>
+
+            <!-- Conversations -->
+            <div class="flex-1 overflow-y-auto">
+                <!-- Conversation Item -->
+                <div class="px-2 py-1">
+                    <div class="p-3 rounded-lg hover:bg-gray-50 cursor-pointer bg-blue-50 border-l-4 border-blue-500">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-3 flex-1">
+                                <div class="relative">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User"
+                                        class="w-12 h-12 rounded-full">
+                                    <div
+                                        class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-sm">Sarah Anderson</p>
+                                    <p class="text-gray-600 text-xs truncate">That sounds amazing! When are you...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 text-right">2:45 PM</p>
+                    </div>
+                </div>
+
+                <!-- Conversation Item -->
+                <div class="px-2 py-1">
+                    <div class="p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-3 flex-1">
+                                <div class="relative">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mike" alt="User"
+                                        class="w-12 h-12 rounded-full">
+                                    <div
+                                        class="absolute bottom-0 right-0 w-3 h-3 bg-gray-300 rounded-full border-2 border-white">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-sm">Mike Johnson</p>
+                                    <p class="text-gray-600 text-xs truncate">You: Thanks for the update!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 text-right">Yesterday</p>
+                    </div>
+                </div>
+
+                <!-- Conversation Item -->
+                <div class="px-2 py-1">
+                    <div class="p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-3 flex-1">
+                                <div class="relative">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Emma" alt="User"
+                                        class="w-12 h-12 rounded-full">
+                                    <div
+                                        class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-sm">Emma Wilson</p>
+                                    <p class="text-gray-600 text-xs truncate">See you soon! 🎉</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 text-right">2 days ago</p>
+                    </div>
+                </div>
+
+                <!-- Conversation Item -->
+                <div class="px-2 py-1">
+                    <div class="p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-3 flex-1">
+                                <div class="relative">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=David" alt="User"
+                                        class="w-12 h-12 rounded-full">
+                                    <div
+                                        class="absolute bottom-0 right-0 w-3 h-3 bg-gray-300 rounded-full border-2 border-white">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-sm">David Brown</p>
+                                    <p class="text-gray-600 text-xs truncate">Check the new photos from the event</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 text-right">1 week ago</p>
+                    </div>
+                </div>
+
+                <!-- Conversation Item -->
+                <div class="px-2 py-1">
+                    <div class="p-3 rounded-lg hover:bg-gray-50 cursor-pointer">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-3 flex-1">
+                                <div class="relative">
+                                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa" alt="User"
+                                        class="w-12 h-12 rounded-full">
+                                    <div
+                                        class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white">
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-sm">Lisa Martinez</p>
+                                    <p class="text-gray-600 text-xs truncate">Let's grab coffee next week!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 text-right">1 week ago</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Chat Area -->
+        <div class="hidden md:flex flex-1 flex-col bg-white">
+
+            <!-- Chat Header -->
+            <div class="p-4 border-b border-gray-200 flex items-center justify-between bg-white">
+                <div class="flex items-center gap-3">
+                    <div class="relative">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User"
+                            class="w-12 h-12 rounded-full">
+                        <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white">
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-lg">Sarah Anderson</h2>
+                        <p class="text-sm text-gray-600">Active now</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button class="text-gray-600 hover:text-gray-900 p-2 hover:bg-gray-100 rounded-full">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 00.948.684l1.498 4.493a1 1 0 00.502.684l2.048 1.024a11.04 11.04 0 01-5.693 5.92l-1.263-.693a1 1 0 00-.737-.088l-4.141 1.378A2 2 0 012 16.414V5z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="text-gray-600 hover:text-gray-900 p-2 hover:bg-gray-100 rounded-full">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="text-gray-600 hover:text-gray-900 p-2 hover:bg-gray-100 rounded-full">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages -->
+            <div class="flex-1 overflow-y-auto p-4 bg-white space-y-4">
+
+                <!-- Received Message -->
+                <div class="flex items-end gap-2">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User"
+                        class="w-8 h-8 rounded-full">
+                    <div>
+                        <div class="bg-gray-200 text-gray-900 rounded-lg rounded-bl-none px-4 py-2 max-w-xs">
+                            <p class="text-sm">Hey! How are you doing today?</p>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">10:30 AM</p>
+                    </div>
+                </div>
+
+                <!-- Sent Message -->
+                <div class="flex items-end justify-end gap-2">
+                    <div>
+                        <div class="bg-blue-500 text-white rounded-lg rounded-br-none px-4 py-2 max-w-xs">
+                            <p class="text-sm">Hi Sarah! I'm doing great, thanks for asking!</p>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1 text-right">10:32 AM</p>
+                    </div>
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=You" alt="You"
+                        class="w-8 h-8 rounded-full">
+                </div>
+
+                <!-- Received Message -->
+                <div class="flex items-end gap-2">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User"
+                        class="w-8 h-8 rounded-full">
+                    <div>
+                        <div class="bg-gray-200 text-gray-900 rounded-lg rounded-bl-none px-4 py-2 max-w-xs">
+                            <p class="text-sm">That's awesome! Do you want to grab coffee later?</p>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">10:35 AM</p>
+                    </div>
+                </div>
+
+                <!-- Sent Message -->
+                <div class="flex items-end justify-end gap-2">
+                    <div>
+                        <div class="bg-blue-500 text-white rounded-lg rounded-br-none px-4 py-2 max-w-xs">
+                            <p class="text-sm">Absolutely! How about 3 PM at our favorite spot?</p>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1 text-right">10:36 AM</p>
+                    </div>
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=You" alt="You"
+                        class="w-8 h-8 rounded-full">
+                </div>
+
+                <!-- Received Message -->
+                <div class="flex items-end gap-2">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah" alt="User"
+                        class="w-8 h-8 rounded-full">
+                    <div>
+                        <div class="bg-gray-200 text-gray-900 rounded-lg rounded-bl-none px-4 py-2 max-w-xs">
+                            <p class="text-sm">Perfect! That sounds amazing! See you then 😊</p>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">10:37 AM</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Message Input -->
+            <div class="p-4 border-t border-gray-200 bg-white">
+                <div class="flex items-end gap-3">
+                    <button class="text-blue-500 hover:text-blue-600 p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4">
+                            </path>
+                        </svg>
+                    </button>
+                    <input type="text" placeholder="Aa"
+                        class="flex-1 px-4 py-2 bg-gray-100 rounded-full text-sm focus:outline-none">
+                    <button class="text-blue-500 hover:text-blue-600 p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9 11h.01M15 11h.01">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="text-blue-500 hover:text-blue-600 p-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 13h2v8H3zm4-8h2v16H7zm4-2h2v18h-2zm4 4h2v14h-2zm4-4h2v18h-2z"></path>
+                        </svg>
+                    </button>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M16.6915026,12.4744748 L3.50612381,13.2599618 C3.19218622,13.2599618 3.03521743,13.4170592 3.03521743,13.5741566 L1.15159189,20.0151496 C0.8376543,20.8006365 0.99,21.89 1.77946707,22.52 C2.41,22.99 3.50612381,23.1 4.13399899,22.8429026 L21.714504,14.0454487 C22.6563168,13.5741566 23.1272231,12.6315722 22.9702544,11.6889879 L4.13399899,1.16257692 C3.34915502,0.9054795 2.40734225,1.01659289 1.77946707,1.4879052 C0.994623095,2.11456498 0.837654326,3.20604706 1.15159189,3.99153392 L3.03521743,10.4325269 C3.03521743,10.5896243 3.19218622,10.7467217 3.50612381,10.7467217 L16.6915026,11.5322086 C16.6915026,11.5322086 17.1624089,11.5322086 17.1624089,12.0034467 C17.1624089,12.4744748 16.6915026,12.4744748 16.6915026,12.4744748 Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Empty State for Mobile -->
+        <div class="flex md:hidden flex-1 flex-col items-center justify-center bg-gray-50">
+            <svg class="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                </path>
+            </svg>
+            <p class="text-gray-600 text-center">Select a conversation to start messaging</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

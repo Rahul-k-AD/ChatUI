@@ -1,0 +1,12 @@
+{
+    "name": "chatui",
+    "version": "1.0.0",
+    "description": "Social Media Chat UI",
+    "scripts": {
+        "build": "tailwindcss -i styles.css -o output.css",
+        "watch": "tailwindcss -i styles.css -o output.css --watch"
+    },
+    "dependencies": {
+        "tailwindcss": "^4.1.18"
+    }
+}
